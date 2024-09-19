@@ -1,0 +1,38 @@
+<form (ngSubmit)="register()">
+  <div class="mb-3">
+    <label for="nome" class="form-label">Nome</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nome"
+      name="nome"
+      placeholder="Nome"
+      [(ngModel)]="model.nome"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="annoNascita" class="form-label">Anno nascita</label>
+    <input
+      [(ngModel)]="model.annoNascita"
+      type="number"
+      class="form-control"
+      id="annoNascita"
+      name="annoNascita"
+      placeholder="Anno nascita"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="genere" class="form-label">Genere</label>
+    <select
+      class="form-select"
+      id="genere"
+      [(ngModel)]="model.genere"
+      name="genere"
+    >
+      <option value="m">Maschio</option>
+      <option value="f">Femmina</option>
+      <option value="nb">Non binario</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Registrami</button>
+</form>
