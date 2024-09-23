@@ -34,6 +34,39 @@
       <option value="nb">Non binario</option>
     </select>
   </div>
+  <div class="mb-3">
+    <label for="immagine" class="form-label">Immagine</label>
+    <input
+      [(ngModel)]="model.immagine"
+      type="text"
+      class="form-control"
+      id="immagine"
+      name="immagine"
+      placeholder="Immagine"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input
+      [(ngModel)]="model.email"
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Email"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input
+      [(ngModel)]="model.password"
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="Password"
+    />
+  </div>
   <button type="submit" class="btn btn-primary">Registrami</button>
 </form>
 <!-- <button type="button" class="btn btn-warning" (click)="ping()">Ping</button> -->
