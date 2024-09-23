@@ -15,5 +15,10 @@ export class RegistrazioneComponent {
   register() {
     this.userService.register(this.model)
       .subscribe(r => console.log(r));
+
+  }
+
+  ping() {
+    this.userService.ping().subscribe(m => alert(m.message));
   }
 }
