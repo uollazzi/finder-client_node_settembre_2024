@@ -12,7 +12,7 @@ export class RegisterUserDTO {
     this.genere = "nb";
     this.email = "";
     this.password = "";
-    this.immagine = "nb";
+    this.immagine = "";
 
   }
 }

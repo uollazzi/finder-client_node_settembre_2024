@@ -17,4 +17,12 @@ export class UserService {
   register(model: RegisterUserDTO) {
     return this.http.post<any>(environment.API_URL + "/api/register", model);
   }
+
+  uploadImage(formData: FormData) {
+    return this.http.post<any>(environment.API_URL + "/api/upload-image", formData);
+  }
+
+  getUserById(id: string) {
+    return this.http.get<any>(environment.API_URL + "/api/user/" + id);
+  }
 }

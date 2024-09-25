@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { RegistrazioneComponent } from './components/registrazione/registrazione.component';
 import { FormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrazioneComponent
+    RegistrazioneComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -46,6 +46,26 @@
     />
   </div>
   <div class="mb-3">
+    <input
+      type="file"
+      style="display: none"
+      (change)="onFileSelected($event)"
+      #fileUpload
+    />
+
+    <div class="file-upload">
+      {{ fileName || "Seleziona file." }}
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="fileUpload.click()"
+      >
+        UPLOAD
+      </button>
+    </div>
+  </div>
+  <div class="mb-3">
     <label for="email" class="form-label">Email</label>
     <input
       [(ngModel)]="model.email"
@@ -69,4 +89,5 @@
   </div>
   <button type="submit" class="btn btn-primary">Registrami</button>
 </form>
+<div class="alert alert-danger" *ngIf="errorMessage">{{ errorMessage }}</div>
 <!-- <button type="button" class="btn btn-warning" (click)="ping()">Ping</button> -->
