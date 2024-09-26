@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "finder-3b700",
+    "public": "dist/finder-client/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
